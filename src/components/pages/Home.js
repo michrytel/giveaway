@@ -1,11 +1,11 @@
 import React from 'react';
-import HomeHeader from '../templates/HomeHeader';
+import HomeIntro from '../templates/HomeIntro';
 
 
 const Home = () => {
   return (
     <>
-      <HomeHeader />
+      <HomeIntro />
       <main>
       </main>
     </>

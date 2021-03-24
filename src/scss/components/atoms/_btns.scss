@@ -1,0 +1,22 @@
+.btn__big {
+  font-size: 28px;
+  text-decoration: none;
+  font-weight: 100;
+  color: $dark-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 80px;
+  border: 1px solid $dark-grey;
+
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%;
+    height: 100%;
+    text-align: center;
+  }
+}

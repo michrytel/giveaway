@@ -4,3 +4,9 @@
 @import "settings/colors";
 
 /*components*/
+@import "components/organisms/header";
+@import "components/organisms/hero";
+@import "components/intro";
+
+/*atoms*/
+@import "components/atoms/btns";

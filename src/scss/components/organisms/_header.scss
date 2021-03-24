@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: flex-end;
+    .nav {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-top: 40px;
+      .userbar {
+        margin-right: 40px;
+        display: flex;
+        justify-content: flex-end;
+        .userbar__item {
+          a {
+            padding: 9px 20px;
+            text-decoration: none;
+            color: $light-grey;
+          }
+        }
+      }
+      .navbar {
+        display: flex;
+        margin-right: 40px;
+        .navbar__item {
+          padding: 9px 20px;
+
+          &:first-child {
+            border: 1px solid $dark-grey;
+          }
+          a {
+            cursor: pointer;
+
+            color: $dark-grey;
+          }
+        }
+      }
+    }
+  }
+
+
+

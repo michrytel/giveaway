@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 
-const Nav = () => {
+const NavBar = () => {
   return (
     <ul className='navbar'>
       <li className='navbar__item'>
@@ -33,4 +33,4 @@ const Nav = () => {
   );
 }
 
-export default Nav;
+export default NavBar;
