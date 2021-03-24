@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   .intro__img {
     background-image: url("../../../assets/Home-Hero-Image.png");
     background-repeat: no-repeat;
@@ -8,24 +8,23 @@
     background-size: cover;
     width: 50%;
     position: relative;
-    right: 10%;
   }
 }
 
 .hero {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
-  margin-right: 150px;
-  margin-top: 130px;
-  margin-bottom: 270px;
+  margin-right: 5em;
+  margin-top: 10em;
+  margin-bottom: 20em;
+  position: relative;
   .title {
-    width: 610px;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 38px;
-    font-weight: 300;
     color: $dark-grey;
     img {
       padding-top: 0.7em;
@@ -35,6 +34,6 @@
   .btns__hero {
     align-items: center;
     display: flex;
-    gap: 50px;
+    gap: 2em;
   }
 }
