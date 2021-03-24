@@ -1,22 +1,29 @@
 .three__columns-container {
+  font-family: $font-base;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url("../../../assets/");
+  background-image: url("../../../assets/3 Columns Background@2x.png");
+  height: 350px;
   .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 20%;
+    max-width: 25%;
     text-align: center;
+    height: 250px;
+    gap: 1em;
     h2 {
-      
+      color: $dark-gold;
+      font-size: 90px;
     }
     h3 {
-      
+      font-size: 18px;
+      text-transform: uppercase;
     }
     p {
+      font-size: 16px;
       
     }
   }
