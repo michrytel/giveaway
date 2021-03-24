@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeIntro from '../templates/HomeIntro';
 import ThreeColumns from "../organisms/ThreeColumns";
+import HomeSteps from "../templates/HomeSteps";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <HomeIntro />
       <main>
           <ThreeColumns/>
+          <HomeSteps/>
       </main>
     </>
   );
