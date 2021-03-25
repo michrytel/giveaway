@@ -24,10 +24,13 @@
       display: flex;
       gap: 2rem;
       .form__top-name {
+        position: relative;
         width: 100%;
         display: flex;
         flex-direction: column;
         input {
+          color: $dark-grey;
+          font-family: $font-base;
           border: none;
           border-bottom: 1px solid $dark-grey;
           width: 100%;
@@ -38,10 +41,13 @@
         }
       }
       .form__top-email {
+        position: relative;
         width: 100%;
         display: flex;
         flex-direction: column;
         input {
+          color: $dark-grey;
+          font-family: $font-base;
           border: none;
           border-bottom: 1px solid $dark-grey;
           width: 100%;
@@ -55,7 +61,11 @@
     .form__bottom {
       display: flex;
       flex-direction: column;
+      position: relative;
+
       textarea {
+        color: $dark-grey;
+        font-family: $font-base;
         border: none;
         border-bottom: 1px solid $dark-grey;
         width: 100%;
@@ -77,4 +87,13 @@
       }
     }
   }
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+  position: absolute;
+  bottom: 30%;
+  font-family: $font-base;
+  font-weight: bold;
 }
