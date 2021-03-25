@@ -1,20 +1,17 @@
-const HelpPageBtns = ({postsPerPage, totalPosts, paginate}) => {
+import HelpPageBtn from "../atoms/HelpPageBtn";
+const HelpPageBtns = ({postsPerPage, totalPosts, paginate, currentPage}) => {
     const pageNumbers = [];
-    for (let i=1; i<=Math.ceil(totalPosts/postsPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
         pageNumbers.push(i)
     }
-
     return (
+        totalPosts > 3 &&
         <ul className="help__pagination">
-            {pageNumbers.map(number => (
-                <li key={number} className="help__pagination-item">
-                    <a onClick={() => paginate(number)} className="help__pagination-link active">
-                        {number}
-                    </a>
-                </li>
+            {pageNumbers.map(el => (
+                <HelpPageBtn paginate={paginate} currentPage={currentPage} number={el} key={el}/>
             ))}
         </ul>
+
     )
 }
-
 export default HelpPageBtns
