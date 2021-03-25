@@ -1,11 +1,11 @@
 import React from 'react';
-import BtnBig from "../atoms/BtnBig";
+import Btn from "../atoms/Btn";
 
 const HeroBtns = ({ to }) => {
     return (
         <div className='btns__hero'>
-            <BtnBig to={to} text='Give things' />
-            <BtnBig to={to} text='Organize a fundraiser' />
+            <Btn to={to} text='Give things' />
+            <Btn to={to} text='Organize a fundraiser' />
         </div>
     );
 }

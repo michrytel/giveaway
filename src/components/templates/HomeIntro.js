@@ -4,7 +4,7 @@ import Hero from "../organisms/Hero";
 
 const HomeIntro = () => {
     return (
-        <div className="intro">
+        <div className="intro" name="root">
             <div className="intro__img"/>
             <div className="intro__content">
                 <Header/>

@@ -1,15 +1,15 @@
 import Title from "../atoms/Title";
 import Steps from "../organisms/Steps";
-import BtnBig from "../atoms/BtnBig";
+import Btn from "../atoms/Btn";
 
 const HomeSteps = () => {
     return (
-        <div className="steps__container">
+        <div className="steps__container" name="firstSteps">
             <Title mainText="4 Simple steps are enough"/>
             <div className="steps__box">
                 <Steps/>
             </div>
-            <BtnBig to="/login" text='Give things'/>
+            <Btn to="/login" text='Give things'/>
         </div>
 
     )
