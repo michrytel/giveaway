@@ -1,0 +1,80 @@
+.contact {
+  font-family: $font-base;
+  color: $dark-grey;
+  display: flex;
+  gap: 4rem;
+  img {
+    max-width: 50%;
+    opacity: 0.3;
+  }
+  .contact__form {
+    width: 35%;
+
+
+    .title {
+      text-align: center;
+      font-size: 38px;
+      margin-bottom: 2rem;
+      img {
+        opacity: 1;
+      }
+    }
+    .form__top {
+      width: 100%;
+      display: flex;
+      gap: 2rem;
+      .form__top-name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        input {
+          border: none;
+          border-bottom: 1px solid $dark-grey;
+          width: 100%;
+          outline: none;
+          height: 1.5rem;
+          margin-bottom: 2.5rem;
+
+        }
+      }
+      .form__top-email {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        input {
+          border: none;
+          border-bottom: 1px solid $dark-grey;
+          width: 100%;
+          outline: none;
+          height: 1.5rem;
+          margin-bottom: 2.5rem;
+
+        }
+      }
+    }
+    .form__bottom {
+      display: flex;
+      flex-direction: column;
+      textarea {
+        border: none;
+        border-bottom: 1px solid $dark-grey;
+        width: 100%;
+        outline: none;
+        height: 5rem;
+        margin-bottom: 2.5rem;
+        resize: none;
+      }
+      button {
+        display: block;
+        font-family: $font-base;
+        font-weight: bold;
+        border: 1px solid $dark-grey;
+        padding: 0.5rem 2rem;
+        outline: none;
+        background-color: white;
+        align-self: flex-end;
+        width: 20%;
+      }
+    }
+  }
+}
