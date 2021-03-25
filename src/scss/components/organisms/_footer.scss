@@ -1,0 +1,24 @@
+.footer {
+  margin-top: 2em;
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  justify-content: center;
+  .footer__socials {
+    position: absolute;
+    right: 5%;
+
+  }
+
+  .footer__text {
+    position: absolute;
+    text-align: center;
+    font-family: $font-base;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    letter-spacing: 0;
+    color: $dark-grey;
+  }
+}
