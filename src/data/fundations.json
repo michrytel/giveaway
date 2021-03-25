@@ -1,30 +1,30 @@
 [
   {
     "id": 1,
-    "title": "Fundacja “Dbam o zdrowie”",
-    "goal": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-    "things": "ubrania, jedzenie, sprzęt AGD, meble, zabawki",
+    "title": "Fundation Lorem",
+    "goal": "Helping people in a difficult life situation.",
+    "things": "clothes, food, household appliances, furniture, toys",
     "cat": "funds"
   },
   {
     "id": 2,
-    "title": "Fundacja “Dla dzieci”",
-    "goal": "Pomoc dzieciom z ubogich rodzin.",
-    "things": "ubrania, meble, zabawki",
+    "title": "Foundation For Children",
+    "goal": "Help for children from poor families.",
+    "things": "clothes, furniture, toys",
     "cat": "funds"
 
   },
   {
     "id": 3,
-    "title": "Fundacja “Bez domu”",
-    "goal": "Pomoc dla osób nie posiadających miejsca zamieszkania.",
-    "things": "ubrania, jedzenie, ciepłe koce",
+    "title": "Foundation For Old People ",
+    "goal": "Help for old people from poor families.",
+    "things": "clothes, furniture, meds",
     "cat": "funds"
 
   },
   {
     "id": 4,
-    "title": "Zbiórka “Lorem Ipsum 4”",
+    "title": "Organization “Lorem Ipsum 4”",
     "goal": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
     "things": "Egestas, sed, tempus",
     "cat": "orgs"
@@ -32,7 +32,7 @@
   },
   {
     "id": 5,
-    "title": "Zbiórka “Lorem Ipsum 5",
+    "title": "Organization “Lorem Ipsum 5",
     "goal": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
     "things": "Quisque non tellus",
     "cat": "orgs"
@@ -40,7 +40,7 @@
   },
   {
     "id": 6,
-    "title": "Zbiórka “Lorem Ipsum 6",
+    "title": "Organization “Lorem Ipsum 6",
     "goal": "Scelerisque in dictum non consectetur a erat nam.",
     "things": "Mi, quis, hendrerit, dolor",
     "cat": "orgs"
@@ -48,7 +48,7 @@
   },
   {
     "id": 7,
-    "title": "Zbiórka “Lorem Ipsum 7”",
+    "title": "Fund “Lorem Ipsum 7”",
     "goal": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
     "things": "Egestas, sed, tempus",
     "cat": "funds"
@@ -56,14 +56,21 @@
   },
   {
     "id": 8,
-    "title": "Zbiórka “Lorem Ipsum 8",
+    "title": "Collection “Lorem Ipsum 8",
     "goal": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
     "things": "Quisque non tellus",
     "cat": "locals"
   },
   {
     "id": 9,
-    "title": "Zbiórka “Lorem Ipsum 9",
+    "title": "Collection “Lorem Ipsum 9",
+    "goal": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
+    "things": "Quisque non tellus",
+    "cat": "locals"
+  },
+  {
+    "id": 10,
+    "title": "Organization “Lorem Ipsum 10",
     "goal": "Scelerisque in dictum non consectetur a erat nam.",
     "things": "Mi, quis, hendrerit, dolor",
     "cat": "funds"
