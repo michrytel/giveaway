@@ -10,6 +10,10 @@
   width: 280px;
   height: 80px;
   border: 1px solid $dark-grey;
+  &:hover {
+    border: 1px solid $light-gold;
+    transition: 0.2s;
+  }
 
 
   p {
@@ -27,5 +31,12 @@
   background-color: white;
   border: 1px solid $dark-grey;
   padding: 1em;
+  &:hover {
+    border: 1px solid $light-gold;
+    transition: 0.2s;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 

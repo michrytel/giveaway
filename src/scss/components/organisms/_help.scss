@@ -1,12 +1,12 @@
 .help__container {
   color: $dark-grey;
-
   font-family: $font-base;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 800px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 
   .title {
     font-size: 38px;
@@ -80,8 +80,9 @@
       display: flex;
       gap: 1em;
       .help__pagination-item {
-        cursor: pointer;
+        padding: 0.3em;
 
+        cursor: pointer;
         .help__pagination-link {
 
         }

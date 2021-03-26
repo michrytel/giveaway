@@ -11,10 +11,15 @@
         display: flex;
         justify-content: flex-end;
         .userbar__item {
+          padding: 0.3em;
           a {
             padding: 5px 10px;
             text-decoration: none;
             color: $light-grey;
+            &:hover {
+              border-bottom: 0.5px solid $light-gold;
+              transition: 0.2s;
+            }
           }
         }
       }
@@ -22,8 +27,13 @@
         display: flex;
         .navbar__item {
           padding: 9px 15px;
+          &:hover {
+            border-bottom: 0.5px solid $light-gold;
+            transition: 0.2s;
+
+          }
           &:first-child {
-            border: 0.5px solid $light-grey;
+            border: 0.5px solid $light-gold;
           }
           a {
             cursor: pointer;
