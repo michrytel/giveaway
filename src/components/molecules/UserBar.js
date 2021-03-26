@@ -8,7 +8,7 @@ const UserBar = () => {
         <UserBarLink path='/login' text='Login' />
       </li>
       <li className='userbar__item'>
-        <UserBarLink path='/' text='Register' />
+        <UserBarLink path='/register' text='Register' />
       </li>
     </ul>
   );

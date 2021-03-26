@@ -81,7 +81,9 @@
       gap: 1em;
       .help__pagination-item {
         cursor: pointer;
+
         .help__pagination-link {
+
         }
       }
     }
@@ -92,4 +94,6 @@
   border: 1px solid $light-grey;
   padding: 0.3em;
   cursor: pointer;
+  transition: 0.1s;
+
 }

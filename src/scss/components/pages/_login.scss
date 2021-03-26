@@ -1,0 +1,70 @@
+.login__container {
+  font-family: $font-base;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $dark-grey;
+  .title {
+    margin-bottom: 1rem;
+    font-size: 40px;
+    h2{
+      margin-bottom: 1rem;
+    }
+  }
+  .form {
+    padding: 1rem 3rem;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    background-color: $background-color;
+    .form__inputs {
+      gap: 0.7em;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      width: 100%;
+      label {
+        font-size: 16px;
+      }
+      input {
+        border: none;
+        border-bottom: 1px solid $dark-grey;
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        outline: none;
+        background-color: $background-color;
+      }
+    }
+    .form__btns {
+      display: flex;
+      justify-content: space-between;
+      a {
+        text-decoration: none;
+        padding: 0.5em;
+        background-color: white;
+        border: 1px solid $dark-grey;
+        color: $dark-grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5em;
+        background-color: white;
+        border: 1px solid $dark-grey;
+        font-size: 16px;
+        font-family: $font-base;
+        color: $dark-grey;
+
+      }
+    }
+  }
+}
