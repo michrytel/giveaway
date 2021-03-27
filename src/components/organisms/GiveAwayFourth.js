@@ -1,6 +1,4 @@
 const GiveAwayFourth = ({handleChange, values}) => {
-
-
     return (
         <div className="step__fourth">
             <h3>Shipment details</h3>

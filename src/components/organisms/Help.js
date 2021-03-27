@@ -13,8 +13,6 @@ const Help = ({HelpTitle, state}) => {
 
         </div>
     )
-
-
 }
 
 export default Help
