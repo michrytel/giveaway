@@ -52,6 +52,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover {
+          border: 1px solid $light-gold;
+        }
       }
       button {
         display: flex;
@@ -63,6 +66,9 @@
         font-size: 16px;
         font-family: $font-base;
         color: $dark-grey;
+        &:hover {
+          border: 1px solid $light-gold;
+        }
 
       }
     }
@@ -87,6 +93,9 @@
       padding: 0.5em 1em;
       text-decoration: none;
       color: $dark-grey;
+      &:hover {
+        border: 1px solid $light-gold;
+      }
     }
 
   }

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import Logout from "./components/pages/Logout";
+import GiveAwayAll from "./components/templates/GiveAwayAll";
 
 
 function App() {
@@ -20,6 +21,9 @@ function App() {
                 </Route>
                 <Route exact path='/logout'>
                     <Logout/>
+                </Route>
+                <Route exact path='/giveaway'>
+                    <GiveAwayAll/>
                 </Route>
             </Switch>
         </Router>
