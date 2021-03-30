@@ -29,19 +29,34 @@ const GiveAwayThird = ({handleChange, values}) => {
             </div>
             <div className="third__who">
                 <h3>Who you want to help?</h3>
-                <label htmlFor="kids">Kids</label>
-                <input checked={selected.first} id="kids" type="checkbox" name="who" value="Kids" onChange={handleChange}/>
-                <label htmlFor="mothers">Mothers</label>
-                <input checked={selected.second} id="mothers" type="checkbox" name="who" value="Mothers" onChange={handleChange}/>
-                <label htmlFor="homeless">Homeless</label>
-                <input checked={selected.third} id="homeless" type="checkbox" name="who" value="Homeless" onChange={handleChange}/>
-                <label htmlFor="disabled">Disabled people</label>
-                <input checked={selected.fourth} id="disabled" type="checkbox" name="who" value="Disabled people" onChange={handleChange}/>
-                <label htmlFor="older">Older</label>
-                <input checked={selected.fifth} id="older" type="checkbox" name="who" value="Older" onChange={handleChange}/>
+                <label>
+                    <input checked={selected.first} id="kids" type="checkbox" name="who" value="Kids"
+                           onChange={handleChange}/>
+                    <p>Kids</p>
+                </label>
+                <label htmlFor="mothers">
+                    <input checked={selected.second} id="mothers" type="checkbox" name="who" value="Mothers"
+                           onChange={handleChange}/>
+                    <p>Mothers</p>
+                </label>
+                <label htmlFor="homeless">
+                <input checked={selected.third} id="homeless" type="checkbox" name="who" value="Homeless"
+                       onChange={handleChange}/>
+                    <p>Homeless</p>
+                </label>
+                <label htmlFor="disabled">
+                <input checked={selected.fourth} id="disabled" type="checkbox" name="who" value="Disabled people"
+                       onChange={handleChange}/>
+                   <p>Disabled people</p>
+                </label>
+                <label htmlFor="older">
+                <input checked={selected.fifth} id="older" type="checkbox" name="who" value="Older"
+                       onChange={handleChange}/>
+                  <p>Older</p>
+                </label>
             </div>
             <div className="third__name">
-                <h3>Or enter a specific place (optional)</h3>
+                <h3>Enter a particular place (optional)</h3>
                 <input type="text" name="locationAlt" value={values.locationAlt} onChange={handleChange}/>
             </div>
         </div>

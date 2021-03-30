@@ -3,7 +3,7 @@ const GiveAwaySecond = ({handleChange}) => {
         <div className="step__second">
             <h3>Choose how much 60L bags you need to pack all items</h3>
             <label>
-                Number of bags
+                <p>Number of bags:</p>
                 <select name="number" onChange={handleChange}>
                     <option value="1">1</option>
                     <option value="2">2</option>

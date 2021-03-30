@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Login from "./components/pages/Login";
 import Register from "./components/pages/Register";
 import Logout from "./components/pages/Logout";
-import GiveAwayForm from "./components/templates/GiveAwayForm";
+import GiveAway from "./components/pages/GiveAway";
 
 function App() {
     return (
@@ -22,7 +22,7 @@ function App() {
                     <Logout/>
                 </Route>
                 <Route exact path='/giveaway'>
-                    <GiveAwayForm/>
+                    <GiveAway/>
                 </Route>
             </Switch>
         </Router>

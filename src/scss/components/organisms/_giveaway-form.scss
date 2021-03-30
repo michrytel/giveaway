@@ -1,0 +1,271 @@
+.give__away-container {
+  color: $dark-grey;
+  font-family: $font-base;
+
+  form {
+    .give__away-helper {
+      background-color: $light-gold;
+      width: 100%;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1em;
+
+      h3 {
+        color: black;
+        font-size: 30px;
+        margin-left: 1em;
+      }
+
+      p {
+        font-size: 20px;
+        margin-left: 1.5em;
+      }
+    }
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-image: url("../../../assets/Background-Form.jpg");
+      min-height: 750px;
+
+      .give__away-buttons {
+        display: flex;
+        gap: 1em;
+        margin-left: 3em;
+        margin-bottom: 3em;
+
+        button {
+          &:focus {
+            outline: none;
+          }
+          font-size: 15px;
+          color: $dark-grey;
+          background: transparent;
+          border: 1px solid $dark-grey;
+          padding: 1em 2em;
+          
+        }
+      }
+    }
+  }
+}
+.step__first {
+  margin-left: 3em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  h3 {
+    font-size: 25px;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  label {
+    margin-left: 50px;
+    font-size: 20px;
+    display: flex;
+    gap: 1em;
+    position: relative;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+      &:checked ~ .checkbox {
+        background-image: url("../../../assets/checkmark.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: $light-gold;
+      }
+    }
+    .checkbox {
+      position: absolute;
+      top: 0;
+      left: -30px;
+      height: 20px;
+      width: 20px;
+      border: 1px solid $dark-grey;
+    }
+  }
+}
+
+.step__second {
+  margin-left: 3em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  h3 {
+    font-size: 25px;
+    margin-bottom: 1em;
+    font-weight: bold;
+  }
+  label {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 20px;
+    select {
+      color: $dark-grey;
+      font-size: 18px;
+      width: 120px;
+      height: 30px;
+      text-align-last: center;
+      background: transparent;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.step__third {
+  margin-left: 3em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  h3 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .third__location {
+    margin-bottom: 1em;
+    select {
+      color: $dark-grey;
+      margin-left: 20px;
+      font-size: 18px;
+      width: 120px;
+      height: 40px;
+      background: transparent;
+      text-align-last: center;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .third__who {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+
+    h3 {
+      font-size: 20px;
+    }
+    label {
+      width: 120px;
+      input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked ~ p {
+          background-color: $light-gold;
+        }
+
+      }
+      p {
+        border: 1px solid black;
+        width: 120px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+  .third__name {
+    margin-left: 20px;
+    h3 {
+      color: $light-grey;
+      font-size: 20px;
+    }
+    input {
+      margin-top: 0.5em;
+      height: 25px;
+      width: 120px;
+      background: transparent;
+      border: 1px solid $light-grey;
+      color: $light-grey;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.step__fourth {
+  margin-left: 3em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  h3 {
+    font-size: 25px;
+    margin-bottom: 1em;
+    font-weight: bold;
+
+  }
+
+  .fourth__content {
+    margin-left: 25px;
+    display: flex;
+    gap: 5em;
+    input {
+      background: transparent;
+      border: 1px solid $dark-grey;
+      font-size: 20px;
+      color: $dark-grey;
+
+      &:focus {
+        outline: none;
+      }
+    }
+    
+
+    textarea {
+      resize: none;
+      background: transparent;
+      border: 1px solid $dark-grey;
+      height: 100px;
+      font-size: 20px;
+      color: $dark-grey;
+    }
+
+    .fourth__first {
+      h3 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-bottom: 0;
+      }
+
+      gap: 0.3em;
+      width: 220px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .fourth__second {
+      h3 {
+        font-weight: bold;
+        margin-bottom: 0;
+        font-size: 20px;
+      }
+      gap: 0.3em;
+      display: flex;
+      flex-direction: column;
+      width: 220px;
+    }
+  }
+}
