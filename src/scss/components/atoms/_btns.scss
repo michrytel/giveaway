@@ -13,6 +13,8 @@
   &:hover {
     border: 1px solid $light-gold;
     transition: 0.2s;
+    color: $light-gold;
+
   }
 
 
@@ -34,6 +36,7 @@
   &:hover {
     border: 1px solid $light-gold;
     transition: 0.2s;
+    color: $light-gold;
   }
   &:focus {
     outline: none;

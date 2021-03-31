@@ -52,8 +52,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: 0.2s;
         &:hover {
           border: 1px solid $light-gold;
+          color: $light-gold;
         }
       }
       button {
@@ -66,8 +68,10 @@
         font-size: 16px;
         font-family: $font-base;
         color: $dark-grey;
+        transition: 0.2s;
         &:hover {
           border: 1px solid $light-gold;
+          color: $light-gold;
         }
 
       }

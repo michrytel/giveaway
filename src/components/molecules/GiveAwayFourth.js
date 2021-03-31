@@ -19,13 +19,13 @@ const GiveAwayFourth = ({handleChange, values}) => {
                            onChange={handleChange}/>
                 </div>
                 <div className="fourth__second">
-                    <h3>Shipment date</h3>
+                    <h3>Receipt date</h3>
                     <label htmlFor="date">Date</label>
                     <input className="date" type="date" id="date" name="address.date" value={values.address.date}
                            onChange={handleChange}/>
                     <label htmlFor="hour">Hour</label>
                     <input id="hour" type="text" name="address.hour" value={values.address.hour} onChange={handleChange}
-                           placeholder="10:30"/>
+                           placeholder="07:30"/>
                     <label htmlFor="msg">Message</label>
                     <textarea name="address.extras" id="message" onChange={handleChange} value={values.address.extras}/>
                 </div>

@@ -84,6 +84,11 @@
         background-color: white;
         align-self: flex-end;
         width: 20%;
+        transition: 0.2s;
+        &:hover {
+          border-color: $light-gold;
+          color: $light-gold;
+        }
       }
     }
   }

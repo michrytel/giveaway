@@ -6,6 +6,7 @@ import GiveAwayThird from "../molecules/GiveAwayThird";
 import GiveAwayFourth from "../molecules/GiveAwayFourth";
 import GiveAwayHelper from "../atoms/GiveAwayHelper";
 import GiveAwayFifth from "../molecules/GiveAwayFifth";
+import Title from "../atoms/Title";
 
 const GiveAwayForm = () => {
     let [visibility, setVisibility] = useState(1);
@@ -71,6 +72,7 @@ const GiveAwayForm = () => {
         },
         onSubmit: values => {
             console.log(values);
+            setVisibility(visibility + 1)
         }
     })
     console.log(formik.values);
@@ -131,12 +133,21 @@ const GiveAwayForm = () => {
                     </> : null}
                 {visibility === 5 ?
                     <>
+                        <GiveAwayHelper title={"Important!"}
+                                        text={"Make sure all the details are correct."}/>
                         <div className="step">
                             <GiveAwayFifth values={formik.values}/>
                             <div className="give__away-buttons">
                                 <button onClick={prevButton}>Previous</button>
-                                <button type="submit">submit</button>
+                                <button type="submit">Submit</button>
                             </div>
+                        </div>
+                    </>
+                    : null}
+                {visibility === 6 ?
+                    <>
+                        <div className="step">
+                            <Title text="Thank you for submitting the form. We will send you all information about the receipt by e-mail."/>
                         </div>
                     </>
                     : null}

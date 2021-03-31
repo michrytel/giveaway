@@ -45,7 +45,7 @@ const Contact = () => {
 
     return (
         <div className='contact__form'>
-            <Title text='Skontaktuj się z nami'/>
+            <Title text='Contact with us!'/>
             <form onSubmit={formik.handleSubmit}>
                 <div className="form__top">
                     <div className="form__top-name">
