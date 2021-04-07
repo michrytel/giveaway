@@ -1,5 +1,5 @@
-import Header from "../organisms/Header";
 import GiveAwayHero from "../organisms/GiveAwayHero";
+import Header from "../organisms/Header";
 
 const GiveAwayIntro = () => {
     return (

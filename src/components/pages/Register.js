@@ -1,9 +1,11 @@
-import Header from "../organisms/Header";
 import Title from "../atoms/Title";
 import {NavLink} from "react-router-dom";
 import {useFormik} from "formik";
+import Header from "../organisms/Header";
+import {useAuth} from "../contexts/AuthContext";
 
 const Register = () => {
+    const { signup } = useAuth()
     const formik = useFormik({
         initialValues: {
             email: ``,
@@ -26,7 +28,9 @@ const Register = () => {
             return errors
         },
         onSubmit: values => {
+            signup(values.email, values.password)
         }})
+
     return (
         <>
             <Header/>

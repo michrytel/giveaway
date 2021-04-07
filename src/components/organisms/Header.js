@@ -1,6 +1,7 @@
 import React from 'react';
 import UserBar from "../molecules/UserBar";
 import NavBar from "../molecules/NavBar";
+
 const Header = () => {
     return (
         <header className="header">

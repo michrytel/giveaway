@@ -73,6 +73,9 @@
           border: 1px solid $light-gold;
           color: $light-gold;
         }
+        &:focus {
+          outline: none;
+        }
 
       }
     }

@@ -1,6 +1,6 @@
-import Header from "../organisms/Header";
 import {NavLink} from "react-router-dom";
 import Title from "../atoms/Title";
+import Header from "../organisms/Header";
 
 
 const Logout = () => {
