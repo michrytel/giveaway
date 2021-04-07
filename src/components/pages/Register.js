@@ -3,8 +3,11 @@ import {NavLink} from "react-router-dom";
 import {useFormik} from "formik";
 import Header from "../organisms/Header";
 import {useAuth} from "../contexts/AuthContext";
+import { useHistory } from "react-router-dom";
+
 
 const Register = () => {
+    const history = useHistory()
     const { signup } = useAuth()
     const formik = useFormik({
         initialValues: {
@@ -29,11 +32,12 @@ const Register = () => {
         },
         onSubmit: values => {
             signup(values.email, values.password)
+            history.push("/login")
         }})
 
     return (
         <>
-            <Header/>
+            <Header navbar={false} firstLink={"/"} firstName={"Home"} secondLink={"/login"} secondName={"Login"}/>
             <main>
                 <div className='login__container'>
                     <Title text='Register' />

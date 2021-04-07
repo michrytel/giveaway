@@ -3,9 +3,12 @@ import Title from "../atoms/Title";
 import {useFormik} from "formik";
 import Header from "../organisms/Header";
 import {useAuth} from "../contexts/AuthContext";
+import { useHistory } from "react-router-dom";
+
 
 
 const Login = () => {
+    const history = useHistory()
     const { login } = useAuth()
         const formik = useFormik({
             initialValues: {
@@ -27,11 +30,12 @@ const Login = () => {
             },
             onSubmit: values => {
                 login(values.email, values.password)
+                history.push("/")
 
         }})
     return (
         <>
-            <Header/>
+            <Header navbar={false} firstLink={"/"} firstName={"Home"} secondLink={"/register"} secondName={"Register"}/>
             <main>
                 <div className='login__container'>
                     <Title text='Login' />

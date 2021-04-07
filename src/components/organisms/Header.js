@@ -1,13 +1,13 @@
 import React from 'react';
-import UserBar from "../molecules/UserBar";
 import NavBar from "../molecules/NavBar";
+import UserBar from "../molecules/UserBar";
 
-const Header = () => {
+const Header = ({firstLink, secondLink, firstName, secondName, navbar, clicker}) => {
     return (
         <header className="header">
             <nav className='nav'>
-                <UserBar/>
-                <NavBar/>
+                <UserBar firstLink={firstLink} firstName={firstName} secondLink={secondLink} secondName={secondName} clicker={clicker}/>
+                {navbar ? <NavBar/> : null}
             </nav>
         </header>
 
